@@ -34,6 +34,11 @@ body {
   align-items: center;
   gap: 10px;
 }
+.board__title{
+  display: flex;
+  gap: 5px;
+  
+}
 .board__item:nth-child(2) {
   background: rgba(188, 219, 249, 1);
 }
@@ -45,6 +50,19 @@ body {
   font-size: 20px;
   line-height: 100%;
   letter-spacing: 0%;
+}
+.board__name2 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+.board__span {
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 0%;
+  margin-bottom: -10px;
+
 }
 .board__value {
   font-weight: 700;
@@ -93,9 +111,9 @@ body {
   visibility: hidden;
   transition: all 0.3s ease 0s;
 }
-.modal__open{
-    opacity: 1;
-    visibility: visible;
+.modal__open {
+  opacity: 1;
+  visibility: visible;
 }
 .modal__title {
   font-weight: 700;
@@ -112,4 +130,25 @@ body {
   background: rgba(244, 246, 245, 1);
   border-radius: 10px;
   padding: 20px 80px;
+}
+@media (max-width: 550px) {
+  .board__name{
+    opacity: 0;
+    visibility: hidden;
+  }
+  .board__title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-top: -35px;
+  }
+  .board__span{
+    font-weight: 1000;
+    font-size: 30px;
+  }
+  .board{
+    width: 100%;
+    border-radius: 0px;
+  }
 }
